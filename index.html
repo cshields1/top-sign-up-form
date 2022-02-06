@@ -19,7 +19,7 @@
   
           <img src="./public/images/eye-icon.svg" alt="eye-icon" class="sidebar-icon" />
   
-          <span class="sidebar-text">Psychdomain</span>
+          <span>Psychdomain</span>
   
         </div>
   
@@ -37,34 +37,27 @@
 
         <div class="form-container">
 
+          <h3>Let's begin.</h3>
+
           <form>
 
-            <h3>Let's begin.</h3>
+            <label class="form-label" for="first-name">First Name</label>
+            <input class="form-input" type="text" id="first-name" name="first-name" autocomplete="given-name" maxlength="45">
 
-            <label>
-              First Name
-              <input class="form-input" type="text" name="first-name" autocomplete="given-name" maxlength="45">
-            </label>
-            <label>
-              Last Name
-              <input class="form-input" type="text" name="last-name" autocomplete="family-name" maxlength="45">
-            </label>
-            <label>
-              Email
-              <input class="form-input" type="email" name="email" autocomplete="email" maxlength="254">
-            </label>
-            <label>
-              Phone Number
-              <input class="form-input" type="tel" name="phone" autocomplete="tel" maxlength="14">
-            </label>
-            <label>
-              Password
-              <input class="form-input" type="password" name="password" maxlength="45">
-            </label>
-            <label>
-              Confirm Password
-              <input class="form-input" type="password" name="confirmed-password" maxlength="45">
-            </label>
+            <label class="form-label" for="last-name">Last Name</label>
+            <input class="form-input" type="text" id="last-name" name="last-name" autocomplete="family-name" maxlength="45">
+
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" autocomplete="email">
+
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" maxlength="14">
+
+            <label class="form-label" for="password">Password</label>
+            <input class="form-input" type="password" id="password" name="password">
+
+            <label class="form-label" for="confirmed-password">Confirm Password</label>
+            <input class="form-input" type="password" id="confirmed-password" name="confirmed-password" maxlength="45">
 
           </form>
 
@@ -75,6 +68,7 @@
           <button class="submit-button" type="submit">Create Account</button>
 
           <p>Already have an account? <a href="https://github.com/cshields1" target="_blank">Log in</a></p>
+
         </div>
 
       </section>
