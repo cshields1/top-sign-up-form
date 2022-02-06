@@ -55,3 +55,84 @@ input, button {
 
 /* Main styles */
 
+@font-face {
+    font-family: Manolete;
+    src: url(./public/fonts/MANOLETE.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(./public/fonts/Lato-Bold.ttf) format('truetype'),
+        url(./public/fonts/Lato-Regular.ttf) format('truetype');
+}
+
+:root {
+    --span-font: Manolete, sans-serif;
+    --text-font: Lato, sans-serif;
+}
+
+body {
+    font-family: var(--text-font)
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: max(600px, 33%);
+    position: relative;
+    z-index: -1;
+}
+
+.sidebar-image {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.sidebar-overlay {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-icon {
+    width: calc(150px - 0.5vw);
+}
+
+span {
+    font-family: var(--span-font);
+    font-size: clamp(36px, calc(60px - 0.5vw), 80px);
+    letter-spacing: 1px;
+}
+
+.content {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #F9FAFB;
+}
+
+h1, h2, button, p {
+    margin-left: 5rem;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 5rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
